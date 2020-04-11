@@ -64,6 +64,7 @@ public class Spawning_manager : MonoBehaviour, IInputClickHandler
             animation_Manager = avatar.GetComponent<Avatar_animation_manager>();
             avatar.transform.rotation = Quaternion.Euler(0.0f, 90.0f, 0.0f);
             spawner_configuration_done = true;
+            Destroy(SpatialMappingManager.Instance.gameObject);
         }
         else
         {
